@@ -1,6 +1,6 @@
 # AI-based Modeling and Control of Robotic Systems
 
-This Project is submitted to Advances in Robotics (AIR) 2021 conference.
+This work is submitted to Advances in Robotics (AIR) 2021 conference.
 This repository helps in the  installation,  running of the python codes for the AI based modeling and control of a 2-link robotic manipulator.
 The user can work and implement on the Neural Network based modeling and Reinforcement learning based control of robot arm in OpenAI gym. This [repository](https://github.com/deepakraina99/ai-modeling-control-robotics) contains a sub folder for modeling and two sub folders for control. The control task is the target reaching of the robot using two specific algorithms like DDPG (Deep Deterministic Gradient Policy)and PPO (Proximal Policy Gradient). 
 ***
