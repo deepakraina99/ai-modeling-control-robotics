@@ -18,6 +18,7 @@ Raina, Deepak, and Subir Kumar Saha. "AI-Based Modeling and Control of Robotic S
   year={2021},
   organization={IEEE}
 }
+```
 ***
 
 ## AI based modeling of the 2-link arm
