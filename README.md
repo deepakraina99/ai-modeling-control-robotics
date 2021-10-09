@@ -19,6 +19,7 @@ Raina, Deepak, and Subir Kumar Saha. "AI-Based Modeling and Control of Robotic S
   organization={IEEE}
 }
 ```
+Video Link: https://youtu.be/yembjBOEUOI
 ***
 
 ## AI based modeling of the 2-link arm
