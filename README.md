@@ -1,3 +1,7 @@
+
+
+https://user-images.githubusercontent.com/34967469/136656613-422ea76b-b695-47bb-a7b2-03952cf2dfb6.mp4
+
 # AI-based Modeling and Control of Robotic Systems
 
 This repository provides the python codes for the AI based modeling and control of a 2-link robotic manipulator.
