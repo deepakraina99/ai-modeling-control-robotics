@@ -1,19 +1,18 @@
 # AI-based Modeling and Control of Robotic Systems
 
-This work is submitted to 3rd International Conference on Robotics and Computer Vision (ICRCV 2021).
-This repository helps in the  installation,  running of the python codes for the AI based modeling and control of a 2-link robotic manipulator.
-The user can work and implement on the Neural Network based modeling and Reinforcement learning based control of robot arm in OpenAI gym. This [repository](https://github.com/deepakraina99/ai-modeling-control-robotics) contains a sub folder for modeling and two sub folders for control. The control task is the target reaching of the robot using two specific algorithms like DDPG (Deep Deterministic Gradient Policy)and PPO (Proximal Policy Gradient). 
+This repository provides the python codes for the AI based modeling and control of a 2-link robotic manipulator.
+The user can develop the Deep Neural Network (DNN) based inverse dynamics model and Reinforcement Learning (RL) based target reaching controller of a robotic arm. 
 ***
 
 ## AI based modeling of the 2-link arm
-The modeling task is the NN based modeling of the robot to get the desired torque values for the input trajectory(cycloidal).
-### PyTorch Installation (Basic Installation)
-PyTorch is a GPU and CPU optimised tensor library for deep learning. Refer [here](https://pytorch.org/docs/stable/index.html)
+The modeling task is the DNN based modeling of the 2-link robotic arm to estimate the desired torque values for the given input joint trajectory.
+### Installation
+First install PyTorch, which is a GPU and CPU optimised tensor library for deep learning. Refer [here](https://pytorch.org/docs/stable/index.html)
 
 ```bash
 pip install torch
 ```
-It is recommeneded to use Python 3.6 (although other Python 3.x versions may still work). You can either download [Python 3.6 here](https://www.python.org/downloads/), or use [pyenv](https://github.com/pyenv/pyenv) to install Python 3.6 in a local directory, e.g. `pyenv install 3.6.5; pyenv local 3.6.5`
+Second, Install Python 3.6 (although other Python 3.x versions may still work). You can either download [Python 3.6 here](https://www.python.org/downloads/), or use [pyenv](https://github.com/pyenv/pyenv) to install Python 3.6 in a local directory, e.g. `pyenv install 3.6.5; pyenv local 3.6.5`
 ### Getting started
 **1.** _File _description_: The [folder](https://github.com/deepakraina99/ai-modeling-control-robotics/tree/main/2link-model-learning) contains three python files  and one csv file exists. The Python files are comprised of the main controller, analytical model and the train_test file. The csv file is the dataset needed to train the model. This is comprised of the trajectory inputs needed for the model i.e. the position, velocity and acceleration which is fed to the Neural Network model to generate the desired torque values for the joint1 and joint 2 of the robot arm.
 
