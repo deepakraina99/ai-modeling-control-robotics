@@ -51,7 +51,7 @@ controller.test(model_fileloc = MODEL_FILE_LOC, num_test=1)
 ```
 ***
 ## AI based control of 2-link arm
-The two state-of-the-art RL algorithms i.e  DDPG (Deep Deterministic Gradient Policy) and PPO (Proximal Policy Gradient) are used in learning a target reaching controller of robotic arm.
+The two state-of-the-art RL algorithms i.e  DDPG (Deep Deterministic Gradient Policy) and PPO (Proximal Policy Optimization) are used in learning a target reaching controller of robotic arm.
 
 ### Installation
 * Install [OpenAI gym](https://gym.openai.com/)
