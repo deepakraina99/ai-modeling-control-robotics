@@ -2,6 +2,8 @@
 
 This repository provides the python codes for the AI based modeling and control of a 2-link robotic manipulator.
 The user can develop the Deep Neural Network (DNN) based inverse dynamics model and Reinforcement Learning (RL) based target reaching controller of a robotic arm. 
+![Screenshot from 2021-10-09 17-12-03](https://user-images.githubusercontent.com/34967469/136656579-b2f7716b-ac73-45aa-aa6c-d8dbcaaff3b2.png)
+
 ***
 
 ## AI based modeling of the 2-link arm
@@ -19,22 +21,26 @@ pip install python=3.6
 ### Getting started
 **1. Training the NN**: To train the DNN for model learning, use the *train_test.py* file. The class has input called Epoch which needs to be mentioned.  The training and test loss is observed at the end of training.
 
-**3. Testing the NN**: Use the same *train_test.py* file to test the model after the successful completion of training. The output observed is the computation time for analytical model and DNN model.
+**2. Testing the NN**: Use the same *train_test.py* file to test the model after the successful completion of training. The output observed is the computation time for analytical model and DNN model.
 
-An example for testing the model is given below:
+An example for training and testing the model is given below:
 ```python
+from controller import RobotController
 # Robot controller
-controller = RobotController()
-EPOCHS = 10
+controller = RobotController(recordData=False)
+EPOCHS = 5000
 MODEL_FILE_LOC = 'models/trained_nn_model_' + str(EPOCHS)
+## Training
+controller.train(epochs=EPOCHS)
 ## Testing
 controller.test(model_fileloc = MODEL_FILE_LOC, num_test=1)
 ```
 ***
 ## AI based control
 The two state-of-the-art RL algorithms i.e  DDPG (Deep Deterministic Gradient Policy) and PPO (Proximal Policy Gradient) are used in learning a target reaching controller of robotic arm.
+
 ### Installation
-* Install OpenAI gym
+* Install [OpenAI gym](https://gym.openai.com/)
 ```
 pip install gym
 ```
@@ -43,12 +49,20 @@ pip install gym
 
 **2. Testing the model**: Use the same file to test the model. The output is the 2-link arm reaching the target ball. The controller.test() takes inputs as the maximum timesteps and number of tests to be run.
 
-An example for testing the model using DDPG algorithm is given below:
+An example for training and testing the controller using DDPG algorithm is given below:
 ```python
-SEED, REWARD_TYPE =4,2
+from agent import Controller
+SEED = 4
+REWARD_TYPE = 2
 controller = Controller(rand_seed = SEED, rew_type = REWARD_TYPE)
+# Training
+NUM_EPISODES = 10000
+MAX_TIME_STEPS = 150
+MODEL_SAVE_NAME = 'reacher'
+controller.train(num_episodes = NUM_EPISODES, max_timesteps = MAX_TIME_STEPS, model_name = MODEL_SAVE_NAME)
 # Testing
-NUM_TESTS = 10
+NUM_TESTS = 1
 MODEL_LOAD_NAME = 'reacher_' + str(NUM_EPISODES) + '_' + str(REWARD_TYPE)
 controller.test(num_test = NUM_TESTS, max_timesteps = MAX_TIME_STEPS, model_name = MODEL_LOAD_NAME)
 ```
+
