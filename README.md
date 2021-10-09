@@ -5,6 +5,19 @@ The user can develop the Deep Neural Network (DNN) based inverse dynamics model 
 ![Screenshot from 2021-10-09 17-12-03](https://user-images.githubusercontent.com/34967469/136656579-b2f7716b-ac73-45aa-aa6c-d8dbcaaff3b2.png)
 ![rp](https://user-images.githubusercontent.com/34967469/136656678-25a69a3d-0036-4c93-af02-10905d3deee1.gif)
 
+### Paper
+A paper on this work can be found at https://ieeexplore.ieee.org/abstract/document/9546974
+
+Raina, Deepak, and Subir Kumar Saha. "AI-Based Modeling and Control of Robotic Systems: A Brief Tutorial." 2021 3rd International Conference on Robotics and Computer Vision (ICRCV). IEEE, 2021.
+```
+@inproceedings{raina2021ai,
+  title={AI-Based Modeling and Control of Robotic Systems: A Brief Tutorial},
+  author={Raina, Deepak and Saha, Subir Kumar},
+  booktitle={2021 3rd International Conference on Robotics and Computer Vision (ICRCV)},
+  pages={45--51},
+  year={2021},
+  organization={IEEE}
+}
 ***
 
 ## AI based modeling of the 2-link arm
@@ -66,4 +79,3 @@ NUM_TESTS = 1
 MODEL_LOAD_NAME = 'reacher_' + str(NUM_EPISODES) + '_' + str(REWARD_TYPE)
 controller.test(num_test = NUM_TESTS, max_timesteps = MAX_TIME_STEPS, model_name = MODEL_LOAD_NAME)
 ```
-
