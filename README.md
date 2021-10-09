@@ -2,6 +2,10 @@
 
 This repository provides the python codes for the AI based modeling and control of a 2-link robotic manipulator.
 The user can develop the Deep Neural Network (DNN) based inverse dynamics model and Reinforcement Learning (RL) based target reaching controller of a robotic arm.
+<figure>
+<img src="https://user-images.githubusercontent.com/34967469/136656579-b2f7716b-ac73-45aa-aa6c-d8dbcaaff3b2.png"" style="width:100%">
+<figcaption align = "center"><b>Fig.1 - 4K Mountains Wallpaper</b></figcaption>
+</figure>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/34967469/136656579-b2f7716b-ac73-45aa-aa6c-d8dbcaaff3b2.png"/ width="500" height="250">
   <img src="https://user-images.githubusercontent.com/34967469/136656914-57cb5236-a0b0-4bb6-b281-82e13ecf9daa.gif" alt="animated" /width="300" height="300">
