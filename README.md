@@ -4,8 +4,9 @@ This repository provides the python codes for the AI based modeling and control 
 The user can develop the Deep Neural Network (DNN) based inverse dynamics model and Reinforcement Learning (RL) based target reaching controller of a robotic arm.
 <p align="center">
   <img src="https://user-images.githubusercontent.com/34967469/136656579-b2f7716b-ac73-45aa-aa6c-d8dbcaaff3b2.png"/>
-  <img src="https://user-images.githubusercontent.com/34967469/136656579-b2f7716b-ac73-45aa-aa6c-d8dbcaaff3b2.png" alt="animated" />
+  <img src="https://user-images.githubusercontent.com/34967469/136656914-57cb5236-a0b0-4bb6-b281-82e13ecf9daa.gif" alt="animated" />
 </p>
+
 ### Paper
 A paper on this work can be found at https://ieeexplore.ieee.org/abstract/document/9546974
 
